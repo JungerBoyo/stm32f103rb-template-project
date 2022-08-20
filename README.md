@@ -8,8 +8,8 @@ Replace PREFIX environment variable in Makefile with the path to arm-none-eabi t
 To debug follow the steps:
 * run st-util
 * run gdb
-* execute: target extended:4242
-* execute: load <path_to_exe>.elf
+* (in gdb)target extended:4242
+* (in gdb)load <path_to_exe>.elf
 
 
 
