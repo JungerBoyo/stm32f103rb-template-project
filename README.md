@@ -2,11 +2,11 @@
 stm32f103rb template project with basic CMSIS libs setup using Unix Makefiles.
 
 ## IMPORTANT
-Replace PREFIX environment variable in Makefile with the path to arm-none-eabi toolchain dir on your machine in order to use a template. You also need st-flash flashing tool to be able to load the binary to microprocessor. 
+Pass <ARM_TOOLCHAIN_PATH>(compiler and objcopy) and <ST_TOOLCHAIN_PATH>(st-flash tool) arguments with make command in order to compile and flash.
 
 ## Debugging
 To debug follow the steps:
-* run st-util
+* run st-util (included in st toolchain)
 * run gdb
 * (in gdb)target extended:4242
 * (in gdb)load <path_to_exe>.elf
